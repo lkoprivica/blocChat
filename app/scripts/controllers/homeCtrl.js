@@ -3,11 +3,14 @@
 (function() {
      function HomeCtrl(Room) {
 		
-        this.Rooms = Room;
-		 this.messages = [
-			 1, 2, 3, 4, 5
-		 ]
-  }
+        this.Rooms = Room.all;
+		 
+		 
+		
+	  
+	  console.log(this.Rooms);
+		 
+  	};
  
      angular
          .module('blocChat')

@@ -12,8 +12,8 @@
 		$stateProvider
          .state('index', {
              url: '/',
-             controller: 'RoomCtrl',
-             templateUrl: '/templates/room.html'
+             controller: 'HomeCtrl as home',
+             templateUrl: '/templates/home.html'
          })
 			
     };

@@ -27,7 +27,7 @@ var Hapi = require('hapi'),
             method: 'GET',
             path: '/{path*}',
             handler: {
-                file: path.join(__dirname, '/app/index.html')
+                file: path.join(__dirname, '/app/pages/index.html')
             }
         }
     };

@@ -1,8 +1,10 @@
 
 (function() {
      function RoomCtrl(Rooms) {
-		 console.log(Rooms);
+		 console.log("roomCtrl");
         this.Rooms = Rooms;
+		 
+		 
   }
  
      angular
