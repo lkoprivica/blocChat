@@ -1,0 +1,15 @@
+html, body {
+	height:100%;
+}
+
+.main-content {
+	height:100%;
+}
+
+.side-bar {
+	background-color:#e7e8ea;
+	color:white;
+	height:100%;
+	position: fixed;
+	padding:5px;
+}

@@ -2,8 +2,7 @@
 (function() {
      function RoomCtrl(Rooms) {
 		 console.log("roomCtrl");
-        this.Rooms = Rooms;
-		 
+        this.Rooms = Rooms.all;
 		 
   }
  

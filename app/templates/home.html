@@ -1,3 +1,22 @@
-<ul class="room-list" >
-	<li ng-repeat="room in home.Rooms">{{room.$value}}</li>
-</ul>
+
+<div class="row main-content">
+	<div class="side-bar col-md-3">
+		<h1> Bloc Chat</h1>
+		<div class="row">
+
+			<ul class="room-list col-sm-6">
+				<li ng-repeat="room in home.Rooms">{{room.$value}}</li>
+			</ul>
+
+			<div class="col-sm-6">
+				<button class="add-room btn btn-default" ng-click="addRoom()">Add Room</button>
+			</div>
+			
+		</div>
+
+	</div>
+	<div class="col-md-9">
+	
+	</div>
+
+</div>
