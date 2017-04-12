@@ -8,9 +8,16 @@ html, body {
 
 .side-bar {
 	background-color:#e7e8ea;
-	color:white;
 	height:100%;
 	position: fixed;
 	padding:5px;
 }
 
+
+.modal-footer .col-md-6 .btn {
+	margin:0 auto;
+}
+
+ul {
+	list-style: none;
+}

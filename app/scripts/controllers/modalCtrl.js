@@ -7,8 +7,13 @@
 		
 		$scope.create = function() {
 			var roomName = document.getElementsByName('roomName')[0].value;
-			Room.add(roomName);
-			$uibModalInstance.close();
+			if(roomName){
+				Room.add(roomName);
+				$uibModalInstance.close();
+			}else{
+				//display some error message 
+				alert("room name cannot be empty!")
+			}
 			
 		};
 		
