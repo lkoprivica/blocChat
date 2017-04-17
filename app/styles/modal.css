@@ -1,0 +1,10 @@
+.modal-dialog .modal-header{ 
+	font-family: sans-serif;
+	color: red;
+}
+
+.modal-dialog input {
+	display: block;
+	width: 100%;
+}
+
