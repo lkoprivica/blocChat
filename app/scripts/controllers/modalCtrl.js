@@ -19,7 +19,7 @@
 		
 		$scope.cancel = function(){
 			$uibModalInstance.dismiss();
-		};
+		}
 	};
 	
  angular

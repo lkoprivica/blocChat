@@ -14,15 +14,6 @@
 	font-weight: normal;
 }
 
-li:nth-child(odd) {
-	background-color: darkgray;
-	
-}
-
-li:nth-child(even) {
-background-color: whitesmoke;  
-}
-
 p:nth-child(odd) {
 	background-color: darkgray;
 	
