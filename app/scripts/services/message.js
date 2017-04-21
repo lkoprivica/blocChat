@@ -9,11 +9,13 @@
       },
 	
 	  send: function(message){
-		  messages.$add(message).then(function(){return;});
+		  messages.$add(message).then(function(){return;})
+	  }
+
 		
       }
   	};
-   }
+   
   
 angular
     .module('blocChat')
