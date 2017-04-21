@@ -29,6 +29,10 @@
 				
 			</li>
 		</ul>
+		<div>
+            <textarea type="text" id="message-box" class="form-control" ng-model="messageInput" placeholder="Type your message: "></textarea>
+            <button id="send" class="btn btn-default" type="button" ng-click="home.send(messageInput)">Send Message</button>
+        </div>
 		
 	</div>
 </div>

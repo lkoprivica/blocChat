@@ -1,5 +1,5 @@
 (function() {
-  function Message($firebaseArray) {
+  function Message($firebaseArray) { 
     var ref = firebase.database().ref().child("messages");
     var messages = $firebaseArray(ref);
 
@@ -9,13 +9,13 @@
       },
 	
 	  send: function(message){
-		  messages.$add(message).then(function{return;})
-	  }
+		  messages.$add(message).then(function(){return;});
 		
-	
-	};
-  }
-  angular
+      }
+  	};
+   }
+  
+angular
     .module('blocChat')
     .factory('Message', ['$firebaseArray', Message]);
 })();
