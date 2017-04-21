@@ -12,6 +12,8 @@
 		 
 		 var _this = this;
 		 
+		 _this.currentRoomId = null;
+		 
 		 $scope.addRoom = function(){
 			$uibModal.open({
 				templateUrl: '/templates/modal.html',
@@ -23,6 +25,7 @@
 	  	 $scope.showmessages = function($id){
 			 _this.roomName = Room.getRoomById($id);
 			 _this.messages = Message.getByRoomId($id);
+			 _this.currentRoomId = $id;
 			  
 	     } 	 
 		 
@@ -31,8 +34,11 @@
 			 var userName = $cookies.get('blocChatCurrentUser');
 			 
 			 var message = {
-				 message: newMessage,
-				 userName: userName;
+				 content: newMessage,
+				 username: userName,
+				 sentAt: new Date(),
+				 roomId: _this.currentRoomId
+				 
 			 };
 			 
 			 Message.send(message);
