@@ -10,10 +10,10 @@
 	
 	  send: function(message){
 		  messages.$add(message).then(function(){return;})
-	  }
-
+	  } 
 		
       }
+					
   	};
    
   
@@ -21,4 +21,6 @@ angular
     .module('blocChat')
     .factory('Message', ['$firebaseArray', Message]);
 })();
+
+
 
