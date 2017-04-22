@@ -11,6 +11,7 @@
 		 
 		 
 		 var _this = this;
+		 $scope.messageInput = "";
 		 
 		 _this.currentRoomId = null;
 		 
@@ -30,18 +31,28 @@
 	     } 	 
 		 
 		 $scope.addMessage = function(){
-			 var newMessage = document.getElementsByName('messageContent')[0].value;
+			 var newMessage = $scope.messageInput;
 			 var userName = $cookies.get('blocChatCurrentUser');
+			 
+			 var currentTime = new Date();
+			 
+			 //var timeString = "";
+			 //timeString += currentTime.getMonth() + "-" + currentTime.getDate() + "-" + currentTime.getYear(); ///...and so on...
 			 
 			 var message = {
 				 content: newMessage,
 				 username: userName,
-				 sentAt: new Date(),
+				 sentAt: currentTime.toString(),
 				 roomId: _this.currentRoomId
 				 
 			 };
 			 
-			 Message.send(message);
+			 Message.send(message, function(messages){
+				 _this.messages = messages;
+				 $scope.messageInput = "";
+				 
+			 });
+			 
 		 }
 		 
 			  
