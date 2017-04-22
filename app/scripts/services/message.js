@@ -8,9 +8,13 @@
 		  return messages.filter(m => m.roomId === roomId);
       },
 	
-	  send: function(message){
-		  messages.$add(message).then(function(){return;})
-	  } 
+
+	  send: function(message, callback){
+		  var _this = this;
+		  messages.$add(message).then(function(){
+			  callback(_this.getByRoomId(message.roomId));
+		  });
+	  }
 		
       }
 					
