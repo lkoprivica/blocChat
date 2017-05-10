@@ -8,6 +8,7 @@
 	     this.Rooms = Room.all;
 		 this.messages = [];
 		 this.roomName = "";
+		
 		 
 		 
 		 var _this = this;

@@ -21,4 +21,52 @@ html, body {
 ul {
 	list-style: none;
 }
+.message-list{
+	padding: 0;
+}
 
+}
+.message-block{
+	margin: 0 0 10px;
+	
+}
+.message-block .author , .message-block .message{
+	margin: 0;
+    padding: 10px 15px;
+	
+}
+
+.author-box {
+    width: 100%;
+    padding: 5px 15px;
+    background-color: darkgray;
+    
+}
+
+.author-box .author {
+	display:inline-block;
+	padding:0;
+	border:none;
+	margin:0;
+	width:75%;
+	float:left;
+}
+.author-box .message-date {
+	padding:0;
+	border:none;
+	margin:0;
+	width:24%;
+	display:inline-block;
+	background-color:darkgray;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
